@@ -1,0 +1,16 @@
+program cimplefinal
+
+{
+
+	declare a,b,c;
+	function fun(in a, inout b)
+	{
+		b := a;
+		c := 4;
+		return(b);
+	}	
+	a := 1;
+	c := fun(in a, inout b);
+	print(c);
+	print(b);
+}.
